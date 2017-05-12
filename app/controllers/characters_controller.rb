@@ -19,7 +19,6 @@ class CharactersController < ApplicationController
 
   def create
     @character = Character.new
-
     @character.movie_id = params[:movie_id]
     @character.actor_id = params[:actor_id]
     @character.name = params[:name]
